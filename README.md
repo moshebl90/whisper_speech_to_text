@@ -17,16 +17,6 @@ This project implements a Streamlit-based web application that processes an uplo
 4. **Transcription:** The [Whisper model](https://huggingface.co/openai/whisper-large-v3) transcribes each speaker segment, even splitting long chunks into smaller segments for accurate transcription.
 5. **RTTM Generation:** An RTTM file is generated to mark speaker times and labels.
 
-## Upcoming Features
-
-**The following features are planned for future updates:**
-
-1.	**Refine Output for Typo Corrections Using LLaMA 3.1:**
-	 - After the transcription process, LLaMA 3.1 will be used to refine the text by correcting any typographical errors and improving overall sentence structure and clarity. This ensures a more polished and accurate transcription output.
-2.	**Sentiment Analysis Based on Audio Emotions:**
-	 - In addition to transcribing speech, a sentiment analysis feature will be added to detect emotional tone (e.g., happiness, sadness, anger) from the audio using emotion-detection models. This will provide a richer context to the transcription by capturing the emotional state of each speaker.
-
-
 ## Usage
 
 1.**Install the required packages:**
@@ -54,6 +44,15 @@ streamlit run voice.py
 	 - A detailed transcription with speaker labels.
 	 - The RTTM file, which marks the start and end times of each speaker segment.
 	 - Enhanced audio files corresponding to each speaker. (still on dev phase)
+
+## Upcoming Features
+
+**The following features are planned for future updates:**
+
+1.	**Refine Output for Typo Corrections Using LLaMA 3.1:**
+	 - After the transcription process, LLaMA 3.1 will be used to refine the text by correcting any typographical errors and improving overall sentence structure and clarity. This ensures a more polished and accurate transcription output.
+2.	**Sentiment Analysis Based on Audio Emotions:**
+	 - In addition to transcribing speech, a sentiment analysis feature will be added to detect emotional tone (e.g., happiness, sadness, anger) from the audio using emotion-detection models. This will provide a richer context to the transcription by capturing the emotional state of each speaker.
 
 
 
